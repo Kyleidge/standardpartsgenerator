@@ -56,3 +56,7 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v5
+        with:
+          # The first deployment of a new site can sit in "updating_pages"
+          # for longer than the default 10 minutes.
+          timeout: 1800000
