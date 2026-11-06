@@ -53,17 +53,20 @@ model is an approximation that keeps the dimensions the standards specify:
 Hexalobular internal driving feature, ISO 10664:2014
 ====================================================
 
-Source: ISO 10664:2014 Table 1 (nominal A, B), identical to ISO 10664:2005
-Table 1 for the sizes used here; Table 3 of ISO 10664:2005 (GO gauge
-limits for A, B, Ri, Re). Of the 2014 edition only Table 1 was checked;
-its foreword says only sizes were added.
+Source: ISO 10664:2014 Table 1 (nominal A, B; identical to the 2005
+edition for the sizes used here) and the GO gauge limits for A, B, Ri, Re
+(ISO 10664:2005 Table 3). Cross-checked against NBK's published excerpt of
+JIS B 1015:2018 (hexalobular socket, nominal A, B and GO / NOT GO gauge
+limits for sockets 3 to 55): A, B and the GO gauge Re limits agree for
+every size used here.
 
 * The contour is twelve tangent arcs: six outer lobes of radius Re centred
   at A / 2 - Re, six inner lobes of radius Ri centred at B / 2 + Ri, 30°
   apart. ISO 10664 defines the curvature only through its gauges, so Re is
   the GO gauge mean and Ri follows from tangency with the nominal A and B
-  (derived; the same construction reproduces the GO gauge's own Ri within
-  0.003 mm). A and B are the nominal socket values.
+  (derived; the same construction, applied to the GO gauge's mean A, B and
+  Re, reproduces the gauge's own mean Ri within 0.003 mm for every size).
+  A and B are the nominal socket values.
 * Depth: the product standard's penetration t (the GO gauge must enter to
   t), then a 118° conical bottom inside B (the bottom contour is at the
   manufacturer's option, ISO 10664 Figure 1 note).
