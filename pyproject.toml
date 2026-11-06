@@ -1,0 +1,31 @@
+[project]
+name = "standardparts"
+version = "0.1.0"
+description = "Front-end-only website that generates STEP models of ISO and DIN standard parts"
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE", "LICENSES/*", "THIRD_PARTY_NOTICES.md"]
+authors = [
+    { name = "KLTMS", email = "7453985+Kyleidge@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+# build123d is pinned to the version in wasm/pyodide-lock.json, so the
+# tests run the same geometry code as the browser.
+dependencies = [
+    "build123d==0.13.0",
+]
+
+[project.scripts]
+standardparts = "standardparts.site:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

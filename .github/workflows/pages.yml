@@ -1,0 +1,58 @@
+# Builds the static site (uv run standardparts build) and publishes dist/
+# to GitHub Pages on every push to main. Turn it on once in the repository
+# settings: Pages > Build and deployment > Source: GitHub Actions.
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deployment at a time; a newer push waits for the running one.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: astral-sh/setup-uv@v10
+        with:
+          enable-cache: true
+
+      # The Pyodide runtime and wheels (~60 MB), verified against the pinned
+      # hashes on every build; cached so most runs skip the download.
+      - uses: actions/cache@v6
+        with:
+          path: .cache/wasm
+          key: wasm-${{ hashFiles('wasm/runtime.json', 'wasm/pyodide-lock.json') }}
+
+      - run: uv sync --locked
+
+      - run: uv run pytest tests/test_site.py
+
+      - run: uv run standardparts build
+
+      - uses: actions/configure-pages@v6
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5

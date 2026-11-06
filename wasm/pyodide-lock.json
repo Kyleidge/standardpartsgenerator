@@ -1,0 +1,482 @@
+{
+ "info": {
+  "abi_version": "2026_0",
+  "arch": "wasm32",
+  "platform": "emscripten_5_0_3",
+  "python": "3.14.2"
+ },
+ "packages": {
+  "anytree": {
+   "depends": [],
+   "file_name": "https://files.pythonhosted.org/packages/7b/98/f6aa7fe0783e42be3093d8ef1b0ecdc22c34c0d69640dfb37f56925cb141/anytree-2.13.0-py3-none-any.whl",
+   "imports": [],
+   "install_dir": "site",
+   "name": "anytree",
+   "sha256": "4cbcf10df36b1f1cba131b7e487ff3edafc9d6e932a3c70071b5b768bab901ff",
+   "version": "2.13.0"
+  },
+  "bd-materials": {
+   "depends": [
+    "threejs-materials",
+    "webcolors"
+   ],
+   "file_name": "https://files.pythonhosted.org/packages/2a/61/4f22974be46a3d16b11422db01422eddd020e52ee7ab42902add3f8c9c0a/bd_materials-0.2.5-py3-none-any.whl",
+   "imports": [
+    "bd_materials"
+   ],
+   "install_dir": "site",
+   "name": "bd-materials",
+   "sha256": "a08fa367c460ed7bfedaf8bdf57c91d93ef87dd5e3b66dc5e4a6771668d168e0",
+   "version": "0.2.5"
+  },
+  "build123d": {
+   "depends": [
+    "anytree",
+    "bd-materials",
+    "cadquery-ocp-novtk-ocp-wasm",
+    "ezdxf",
+    "fonttools",
+    "lib3mf-ocp-wasm",
+    "numpy",
+    "ocp-gordon",
+    "ocpsvg",
+    "requests",
+    "scipy",
+    "svgpathtools",
+    "threejs-materials",
+    "trianglesolver",
+    "typing-extensions",
+    "webcolors"
+   ],
+   "file_name": "https://files.pythonhosted.org/packages/16/a2/da58cdab8a6978376d66c909b06f4a1c9aafbd23163540741c75a51b675e/build123d-0.13.0-py3-none-any.whl",
+   "imports": [
+    "build123d"
+   ],
+   "install_dir": "site",
+   "name": "build123d",
+   "sha256": "177f114e5f0514054189134346d386c7004048f8e58430b9b84b74a04fbc94fe",
+   "version": "0.13.0"
+  },
+  "cadquery-ocp-novtk-ocp-wasm": {
+   "depends": [],
+   "file_name": "https://files.pythonhosted.org/packages/0b/84/74f748a3232155a19f09c74cdf7f19cb07623542c48c01a8d06b4f98c836/cadquery_ocp_novtk_ocp_wasm-8.0.1.1.post202609241841-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
+   "imports": [],
+   "install_dir": "site",
+   "name": "cadquery-ocp-novtk-ocp-wasm",
+   "sha256": "1bc957b6574c8a62a5fb33f03d054af41febbeb809a89bd08b045b17ec3e90d5",
+   "version": "8.0.1.1.post202609241841"
+  },
+  "cadquery-ocp-proxy": {
+   "depends": [],
+   "file_name": "https://files.pythonhosted.org/packages/13/5e/29c3d8c4b290dee82387468a33ac06c663518a167963cdb9ff48e6bbd8f9/cadquery_ocp_proxy-8.0.1.1.0-py3-none-any.whl",
+   "imports": [],
+   "install_dir": "site",
+   "name": "cadquery-ocp-proxy",
+   "sha256": "98c71bb60cfb651afe179b134ab88580fd75384fce0cc6d633f727002cd18abd",
+   "version": "8.0.1.1.0"
+  },
+  "certifi": {
+   "depends": [],
+   "file_name": "https://cdn.jsdelivr.net/pyodide/v314.0.7/full/certifi-2026.4.22-py3-none-any.whl",
+   "imports": [
+    "certifi"
+   ],
+   "install_dir": "site",
+   "name": "certifi",
+   "package_type": "package",
+   "sha256": "c2c0091986db798df5fd84582d289496f31244a898ec032b7015278c2d82c80c",
+   "tool": {},
+   "unvendored_tests": false,
+   "version": "2026.4.22"
+  },
+  "charset-normalizer": {
+   "depends": [],
+   "file_name": "https://cdn.jsdelivr.net/pyodide/v314.0.7/full/charset_normalizer-3.4.7-py3-none-any.whl",
+   "imports": [
+    "charset_normalizer"
+   ],
+   "install_dir": "site",
+   "name": "charset-normalizer",
+   "package_type": "package",
+   "sha256": "9e437ef92fa51f06eedeb1ef092c0a887bd24fe0d40b1e900191117ce1653121",
+   "tool": {},
+   "unvendored_tests": false,
+   "version": "3.4.7"
+  },
+  "dataclasses-json": {
+   "depends": [
+    "marshmallow",
+    "typing-inspect"
+   ],
+   "file_name": "https://files.pythonhosted.org/packages/c3/be/d0d44e092656fe7a06b55e6103cbce807cdbdee17884a5367c68c9860853/dataclasses_json-0.6.7-py3-none-any.whl",
+   "imports": [],
+   "install_dir": "site",
+   "name": "dataclasses-json",
+   "sha256": "0dbf33f26c8d5305befd61b39d2b3414e8a407bedc2834dea9b8d642666fb40a",
+   "version": "0.6.7"
+  },
+  "deprecated": {
+   "depends": [
+    "wrapt"
+   ],
+   "file_name": "https://cdn.jsdelivr.net/pyodide/v314.0.7/full/deprecated-1.3.1-py2.py3-none-any.whl",
+   "imports": [
+    "deprecated"
+   ],
+   "install_dir": "site",
+   "name": "deprecated",
+   "package_type": "package",
+   "sha256": "cdc26a7a56b36b79d5a871ba1bcc0aa793f0d027d9f1a10e1753a1da087c4409",
+   "tool": {},
+   "unvendored_tests": false,
+   "version": "1.3.1"
+  },
+  "ezdxf": {
+   "depends": [
+    "fonttools",
+    "numpy",
+    "pyparsing",
+    "typing-extensions"
+   ],
+   "file_name": "https://files.pythonhosted.org/packages/fb/d7/9f420747a1edf562cabff228f8d1f7a16530ad021ea6f84c775ca15dec9b/ezdxf-1.4.5-py3-none-any.whl",
+   "imports": [
+    "ezdxf"
+   ],
+   "install_dir": "site",
+   "name": "ezdxf",
+   "sha256": "70a79ec7d40990f60453e3c87ffe9f668907ee061cf6f4c0a3794d032ec2b40e",
+   "version": "1.4.5"
+  },
+  "fonttools": {
+   "depends": [],
+   "file_name": "https://cdn.jsdelivr.net/pyodide/v314.0.7/full/fonttools-4.62.1-py3-none-any.whl",
+   "imports": [
+    "fontTools"
+   ],
+   "install_dir": "site",
+   "name": "fonttools",
+   "package_type": "package",
+   "sha256": "0d1516e073fd0a8d8e6d9af46417b6a26209a42518024a18f7085e72d2599605",
+   "tool": {},
+   "unvendored_tests": false,
+   "version": "4.62.1"
+  },
+  "idna": {
+   "depends": [],
+   "file_name": "https://cdn.jsdelivr.net/pyodide/v314.0.7/full/idna-3.11-py3-none-any.whl",
+   "imports": [
+    "idna"
+   ],
+   "install_dir": "site",
+   "name": "idna",
+   "package_type": "package",
+   "sha256": "1619419bc899f07c7a608a12e8238e5e0bc15bb25fec90cfe20a86bb849ba0d8",
+   "tool": {},
+   "unvendored_tests": false,
+   "version": "3.11"
+  },
+  "lib3mf-ocp-wasm": {
+   "depends": [],
+   "file_name": "https://files.pythonhosted.org/packages/ff/dd/7c2d59e69c65810627dc1aae48ebf9be3f34c189e74c4a30e44f0bcb3c57/lib3mf_ocp_wasm-2.5.0.post202609241713-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
+   "imports": [],
+   "install_dir": "site",
+   "name": "lib3mf-ocp-wasm",
+   "sha256": "d87c7350ee72f1f2ecdd61e1fcd5c4310258c531847c6f77dec85a13fbf7120e",
+   "version": "2.5.0.post202609241713"
+  },
+  "marshmallow": {
+   "depends": [
+    "packaging"
+   ],
+   "file_name": "https://files.pythonhosted.org/packages/be/2f/5108cb3ee4ba6501748c4908b908e55f42a5b66245b4cfe0c99326e1ef6e/marshmallow-3.26.2-py3-none-any.whl",
+   "imports": [],
+   "install_dir": "site",
+   "name": "marshmallow",
+   "sha256": "013fa8a3c4c276c24d26d84ce934dc964e2aa794345a0f8c7e5a7191482c8a73",
+   "version": "3.26.2"
+  },
+  "mypy-extensions": {
+   "depends": [],
+   "file_name": "https://files.pythonhosted.org/packages/b5/99/7b1adac7e97ce7bbda34792dc6e9b2f5cc5cffd1875883f78a818b2a2687/mypy_extensions-1.2.0-py3-none-any.whl",
+   "imports": [],
+   "install_dir": "site",
+   "name": "mypy-extensions",
+   "sha256": "993e7a20aa5671eb41a7132cf555af30062da99729601601b9a8382b11cae768",
+   "version": "1.2.0"
+  },
+  "numpy": {
+   "depends": [],
+   "file_name": "https://cdn.jsdelivr.net/pyodide/v314.0.7/full/numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
+   "imports": [
+    "numpy"
+   ],
+   "install_dir": "site",
+   "name": "numpy",
+   "package_type": "package",
+   "sha256": "a292c1f5d7d8a2208cd5e94fc467604c131cabcd2fc14fed6eefde121e7fabdf",
+   "tool": {},
+   "unvendored_tests": false,
+   "version": "2.4.6"
+  },
+  "ocp-gordon": {
+   "depends": [
+    "cadquery-ocp-proxy",
+    "numpy",
+    "scipy"
+   ],
+   "file_name": "https://files.pythonhosted.org/packages/3e/dc/ffc8307cd048f4f1e28d95cff6fe694af74f2bae771af6da272701d9646a/ocp_gordon-0.3.1-py3-none-any.whl",
+   "imports": [
+    "ocp_gordon"
+   ],
+   "install_dir": "site",
+   "name": "ocp-gordon",
+   "sha256": "5df14c38032dcca582ba788e53f8d2e8b39a646a5ea786a0309e8494b3061a81",
+   "version": "0.3.1"
+  },
+  "ocpsvg": {
+   "depends": [
+    "cadquery-ocp-proxy",
+    "svgelements"
+   ],
+   "file_name": "https://files.pythonhosted.org/packages/f1/a5/4143c35ee979c5decc985ba4621f50fae1ec6977adf8ab0429c2a74be668/ocpsvg-0.7.0-py3-none-any.whl",
+   "imports": [
+    "ocpsvg"
+   ],
+   "install_dir": "site",
+   "name": "ocpsvg",
+   "sha256": "a476bb48b6b2e2d9f1f3a6356fde579373d681618b39a6ad9c99a808a0113997",
+   "version": "0.7.0"
+  },
+  "packaging": {
+   "depends": [],
+   "file_name": "https://cdn.jsdelivr.net/pyodide/v314.0.7/full/packaging-26.1-py3-none-any.whl",
+   "imports": [
+    "packaging"
+   ],
+   "install_dir": "site",
+   "name": "packaging",
+   "package_type": "package",
+   "sha256": "565acbbea54da30348b6d68b6a54373e6f777987db9f1db6966b4b3a5060d303",
+   "tool": {},
+   "unvendored_tests": false,
+   "version": "26.1"
+  },
+  "pillow": {
+   "depends": [],
+   "file_name": "https://cdn.jsdelivr.net/pyodide/v314.0.7/full/pillow-12.2.0-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
+   "imports": [
+    "PIL"
+   ],
+   "install_dir": "site",
+   "name": "pillow",
+   "package_type": "package",
+   "sha256": "e29838b7a756e4ee0f27a9cfa9a387ee0dfa2e9dd44be2dd595130b9f9d93ac3",
+   "tool": {},
+   "unvendored_tests": false,
+   "version": "12.2.0"
+  },
+  "platformdirs": {
+   "depends": [],
+   "file_name": "https://files.pythonhosted.org/packages/7c/ae/ecbbbfd0e4343a6a521d49b3c8656fb4643dee2a4f6eaf941cf3280391a8/platformdirs-4.14.5-py3-none-any.whl",
+   "imports": [],
+   "install_dir": "site",
+   "name": "platformdirs",
+   "sha256": "8e778c6fa421516f4d3369449f8df3b0e1b72c0e0005fe88e3ec772d0a14e750",
+   "version": "4.14.5"
+  },
+  "pygltflib": {
+   "depends": [
+    "dataclasses-json",
+    "deprecated"
+   ],
+   "file_name": "https://files.pythonhosted.org/packages/91/d6/7eb8a0e4eb30add2b76c957a41107a5f2ba26472d656e2733728bec0476b/pygltflib-1.16.5-py3-none-any.whl",
+   "imports": [
+    "pygltflib"
+   ],
+   "install_dir": "site",
+   "name": "pygltflib",
+   "sha256": "41d3349c59dcf1586faeaee29c967be07ac2bf7cecdb8ae2b527da1f25afdaac",
+   "version": "1.16.5"
+  },
+  "pyparsing": {
+   "depends": [],
+   "file_name": "https://cdn.jsdelivr.net/pyodide/v314.0.7/full/pyparsing-3.3.2-py3-none-any.whl",
+   "imports": [
+    "pyparsing"
+   ],
+   "install_dir": "site",
+   "name": "pyparsing",
+   "package_type": "package",
+   "sha256": "f0dd8225b5f8e945980b400bd465b4b90cb0498a2eede0d9dbea98372f6110c5",
+   "tool": {},
+   "unvendored_tests": false,
+   "version": "3.3.2"
+  },
+  "requests": {
+   "depends": [
+    "certifi",
+    "charset-normalizer",
+    "idna",
+    "urllib3"
+   ],
+   "file_name": "https://cdn.jsdelivr.net/pyodide/v314.0.7/full/requests-2.33.1-py3-none-any.whl",
+   "imports": [
+    "requests"
+   ],
+   "install_dir": "site",
+   "name": "requests",
+   "package_type": "package",
+   "sha256": "6d62c51c4e7707386bfc2ef54845c16cdaeb99606c064357cccfe4d621285175",
+   "tool": {},
+   "unvendored_tests": false,
+   "version": "2.33.1"
+  },
+  "scipy": {
+   "depends": [
+    "numpy"
+   ],
+   "file_name": "https://cdn.jsdelivr.net/pyodide/v314.0.7/full/scipy-1.18.0-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
+   "imports": [
+    "scipy"
+   ],
+   "install_dir": "site",
+   "name": "scipy",
+   "package_type": "package",
+   "sha256": "17ee329a957863516d1bb6a6aaa0c60576fac027e9cd3d43de27f58b5b599b50",
+   "tool": {},
+   "unvendored_tests": true,
+   "version": "1.18.0"
+  },
+  "svgelements": {
+   "depends": [],
+   "file_name": "https://files.pythonhosted.org/packages/48/2c/6c9bb53db56c8a12a736d2158a8b842a5993b96daabc29d90a098e840280/svgelements-1.9.6-py2.py3-none-any.whl",
+   "imports": [
+    "svgelements",
+    "test"
+   ],
+   "install_dir": "site",
+   "name": "svgelements",
+   "sha256": "8a5cf2cc066d98e713d5b875b1d6e5eeb9b92e855e835ebd7caab2713ae1dcad",
+   "version": "1.9.6"
+  },
+  "svgpathtools": {
+   "depends": [
+    "numpy",
+    "scipy",
+    "svgwrite"
+   ],
+   "file_name": "https://files.pythonhosted.org/packages/1e/a3/bc588e2dd19274f715e95a89f5998098d8fb9301349e2545a84b1042df5e/svgpathtools-1.8.0-py2.py3-none-any.whl",
+   "imports": [
+    "svgpathtools"
+   ],
+   "install_dir": "site",
+   "name": "svgpathtools",
+   "sha256": "783f6d32b37e1d6090fb31d56e6925909682b24ed50c361119a732d1a2c646f2",
+   "version": "1.8.0"
+  },
+  "svgwrite": {
+   "depends": [],
+   "file_name": "https://cdn.jsdelivr.net/pyodide/v314.0.7/full/svgwrite-1.4.3-py3-none-any.whl",
+   "imports": [
+    "svgwrite"
+   ],
+   "install_dir": "site",
+   "name": "svgwrite",
+   "package_type": "package",
+   "sha256": "fbec722bfda91219740504a41643bc6c50844e40539a679c0c755e571c7403d5",
+   "tool": {},
+   "unvendored_tests": false,
+   "version": "1.4.3"
+  },
+  "threejs-materials": {
+   "depends": [
+    "numpy",
+    "pillow",
+    "platformdirs",
+    "pygltflib",
+    "requests"
+   ],
+   "file_name": "https://files.pythonhosted.org/packages/d5/ea/d2980e85afcc62e2a9c032c012009e3d50ec15f9b66ec1097463e65aa55e/threejs_materials-1.2.5-py3-none-any.whl",
+   "imports": [
+    "threejs_materials"
+   ],
+   "install_dir": "site",
+   "name": "threejs-materials",
+   "sha256": "e622264388045fa35612b514ddaedecb213831c98aa0b140a101bbf3fdd527a6",
+   "version": "1.2.5"
+  },
+  "trianglesolver": {
+   "depends": [],
+   "file_name": "https://files.pythonhosted.org/packages/ff/8e/43d45cf3e18e3f455e4b5ab333a7c27b8e38c4e535f7346b7148ce08eb65/trianglesolver-1.2-py3-none-any.whl",
+   "imports": [
+    "trianglesolver"
+   ],
+   "install_dir": "site",
+   "name": "trianglesolver",
+   "sha256": "aa0903c3708b4e2b496f06d490cae72c6ff6274b00d1edce420fcfa3b2b76682",
+   "version": "1.2"
+  },
+  "typing-extensions": {
+   "depends": [],
+   "file_name": "https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl",
+   "imports": [],
+   "install_dir": "site",
+   "name": "typing-extensions",
+   "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+   "version": "4.16.0"
+  },
+  "typing-inspect": {
+   "depends": [
+    "mypy-extensions",
+    "typing-extensions"
+   ],
+   "file_name": "https://files.pythonhosted.org/packages/65/f3/107a22063bf27bdccf2024833d3445f4eea42b2e598abfbd46f6a63b6cb0/typing_inspect-0.9.0-py3-none-any.whl",
+   "imports": [
+    "typing_inspect"
+   ],
+   "install_dir": "site",
+   "name": "typing-inspect",
+   "sha256": "9ee6fc59062311ef8547596ab6b955e1b8aa46242d854bfc78f4f6b0eff35f9f",
+   "version": "0.9.0"
+  },
+  "urllib3": {
+   "depends": [],
+   "file_name": "https://cdn.jsdelivr.net/pyodide/v314.0.7/full/urllib3-2.6.3-py3-none-any.whl",
+   "imports": [
+    "urllib3"
+   ],
+   "install_dir": "site",
+   "name": "urllib3",
+   "package_type": "package",
+   "sha256": "86b7c1af060597b115bcde5e36798039ca50b221afe14aa03d3437ac09b02a75",
+   "tool": {},
+   "unvendored_tests": false,
+   "version": "2.6.3"
+  },
+  "webcolors": {
+   "depends": [],
+   "file_name": "https://files.pythonhosted.org/packages/f0/33/12020ba99beaff91682b28dc0bbf0345bbc3244a4afbae7644e4fa348f23/webcolors-24.8.0-py3-none-any.whl",
+   "imports": [
+    "webcolors"
+   ],
+   "install_dir": "site",
+   "name": "webcolors",
+   "sha256": "fc4c3b59358ada164552084a8ebee637c221e4059267d0f8325b3b560f6c7f0a",
+   "version": "24.8.0"
+  },
+  "wrapt": {
+   "depends": [],
+   "file_name": "https://cdn.jsdelivr.net/pyodide/v314.0.7/full/wrapt-2.1.2-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
+   "imports": [
+    "wrapt"
+   ],
+   "install_dir": "site",
+   "name": "wrapt",
+   "package_type": "package",
+   "sha256": "d81ec96c3ab62b7813dc80f335926ad4a71a6c0111ae603d1813efffcf0725a3",
+   "tool": {},
+   "unvendored_tests": false,
+   "version": "2.1.2"
+  }
+ }
+}
